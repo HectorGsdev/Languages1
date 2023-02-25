@@ -8,14 +8,14 @@ body {
   box-shadow: 5px 5px black;
   border-radius: 12px;
   display: block;
-  width: 49%;
+  width: 57%;
   height: 10%;
   margin: 10px auto;
   padding: 1px;
   border: 2px solid white;
 }
 
-/* language box */
+/* buttons box */
 .langBox {
   display: inline-block;
   background-color: rgb(180, 17, 112);
@@ -30,6 +30,13 @@ body {
   text-align: center;
   color: white;
   vertical-align: middle;
+  cursor: pointer;
+}
+
+.langBox:hover,
+.langBox:active {
+  border: 4px solid red;
+  background-color: blue;
 }
 
 h1 {
