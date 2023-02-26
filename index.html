@@ -15,17 +15,17 @@
         <h3>Here is the information for the header</h3>
       </div>   
     <div class="mainDiv">
+
+
+      <!-- <form method="post"> -->
       <form>
-        <button class="langBox">English</button>
-        <button class="langBox">(Dari)</button>
-        <button class="langBox">(Farsi)</button>
-        <button class="langBox">हिंदी (Hindi)</button>
-        <button class="langBox">(پښتو Pashto)</button>
-        <button class="langBox" id ="spanish">Español (Spanish)</button>
-        <button class="langBox">(اردو Urdu)</button>
-       
-      
-      
+        <button class="button" onclick="changeToEnglish()">English</button>
+        <button class="button" onclick="changeToDari()">دری  (Dari)</button>
+        <button class="button" onclick="changeToFarsi()">فارسی  (Farsi)</button>
+        <button class="button" onclick="changeToHindi()">हिंदी (Hindi)</button>
+        <button class="button" onclick="changeToPashto()">(پښتو Pashto)</button>
+        <button class="button" onclick="changeToSpanish()" id ="spanish">Español (Spanish)</button>
+        <button class="button" onclick="changeToUrdu()" >(اردو Urdu)</button>             
       </form>
     </div>
     <br />
@@ -37,9 +37,11 @@
     </div>
     <br />
     <div>
-      <h1 >English text Title</h1>
-      <p class="intoduction" id="introduction">
-         <!-- This is the area to write the introduction. This is who we are, what we
+      <h1 id ="title">Title in English </h1>
+     
+
+       <p class="intoduction" id="introduction">
+         This is the area to write the introduction. This is who we are, what we
         do, etc. Lorem sollicitudin sapien iaculis aliquet. Morbi ornare ornare
         enim non rutrum. Curabitur id arcu tortor. Integer bibendum nec enim
         eget vestibulum. Nunc risus leo, fringilla vitae magna non, commodo
@@ -51,7 +53,7 @@
         condimentum ultrices. Nullam maximus est in arcu ultricies porta.
         Quisque commodo velit a dignissim maximus. Sed libero dui, sodales
         dignissim dignissim nec, convallis in magna. Quisque dapibus dolor ut
-        est gravida aliquam. -->
+        est gravida aliquam.
       </p>
     </div>
     <br><br><br><br><br><br>
