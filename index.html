@@ -11,33 +11,40 @@
   </head>
   <body>
     <header>
-      <div class="myHeader">
+      <div class="mainHeader" id="mainHeader">
         <h3>Here is the information for the header</h3>
       </div>   
-    <div class="mainDiv">
 
+    <br><br><br> 
+
+     <div class="displayDiv">
+       <h1 class ="select">Select your language:</h1>    
+     </div>
+
+
+    <div class="mainDiv">
 
       <!-- <form method="post"> -->
       <form>
         <button class="button" onclick="changeToEnglish()">English</button>
         <button class="button" onclick="changeToDari()">دری  (Dari)</button>
         <button class="button" onclick="changeToFarsi()">فارسی  (Farsi)</button>
-        <button class="button" onclick="changeToHindi()">हिंदी (Hindi)</button>
+        <!-- <button class="button" onclick="changeToHindi()">हिंदी (Hindi)</button> -->
         <button class="button" onclick="changeToPashto()">(پښتو Pashto)</button>
-        <button class="button" onclick="changeToSpanish()" id ="spanish">Español (Spanish)</button>
-        <button class="button" onclick="changeToUrdu()" >(اردو Urdu)</button>             
+        <!-- <button class="button" onclick="changeToSpanish()" id ="spanish">Español (Spanish)</button>
+        <button class="button" onclick="changeToUrdu()" >(اردو Urdu)</button>              -->
       </form>
     </div>
     <br />
     <!-- <hr /> -->
     <!-- Display text here -->
-    <div class="displayDiv">
-      <h1>Select your language</h1>
-      <h3></h3>
-    </div>
+   
     <br />
     <div>
-      <h1 id ="title">Title in English </h1>
+      <div class="displayDiv"> 
+              <h1 class ="select">Title in English </h1>
+      </div>
+
      
 
        <p class="intoduction" id="introduction">
@@ -58,7 +65,7 @@
     </div>
     <br><br><br><br><br><br>
     <footer>
-      <div class="myFooter">
+      <div class="mainFooter" id="mainFooter">
         <h3>Here is the information for the footer</h3>
       </div>
     </footer>

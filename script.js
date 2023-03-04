@@ -1,71 +1,108 @@
 "use strict";
 
+let currentLanguage = "English";
+
 function changeToSpanish() {
-  // Get the paragraph element by its ID
-  let paragraph = document.getElementById("introduction");
-  let myTitle = document.getElementById("title");
-  // Change the content of the paragraph
-  paragraph.innerHTML = "Contenido en Español (Content in Spansih)";
-  myTitle.innerHTML = "Titulo en Español (Title in Spanish)";
-  event.preventDefault();
+  currentLanguage = "mainPageSpanish";
+  displayScreen(mainPageSpanish);
 }
 
 function changeToEnglish() {
-  // Get the paragraph element by its ID
-  let paragraph = document.getElementById("introduction");
-  let myTitle = document.getElementById("title");
-  // Change the content of the paragraph
-  paragraph.innerHTML = "Content in English";
-  myTitle.innerHTML = "Title in English";
-  event.preventDefault();
+  currentLanguage = "mainPageEnlgish";
+  displayScreen(mainPageEnglish);
 }
 
 function changeToDari() {
-  // Get the paragraph element by its ID
-  let paragraph = document.getElementById("introduction");
-  let myTitle = document.getElementById("title");
-  // Change the content of the paragraph
-  paragraph.innerHTML = "محتوا در دری  (Content in Dari)";
-  myTitle.innerHTML = " (عنوان دری Title to Dari)";
-  event.preventDefault();
+  currentLanguage = "mainPageDari";
+  displayScreen(mainPageDari);
 }
 
 function changeToPashto() {
-  // Get the paragraph element by its ID
-  let paragraph = document.getElementById("introduction");
-  let myTitle = document.getElementById("title");
-  // Change the content of the paragraph
-  paragraph.innerHTML = "مواد په پښتو ژبه (Content in Pashto)";
-  myTitle.innerHTML = "سرلیک په پښتو ژبه (Title in Pashto)";
-  event.preventDefault();
+  currentLanguage = "mainPagePashto";
+  displayScreen(mainPagePashto);
 }
 
 function changeToHindi() {
-  // Get the paragraph element by its ID
-  let paragraph = document.getElementById("introduction");
-  let myTitle = document.getElementById("title");
-  // Change the content of the paragraph
-  paragraph.innerHTML = "हिंदी में सामग्री (Content in Hindi)";
-  myTitle.innerHTML = "हिंदी में शीर्षक (Title in Hindi)";
-  event.preventDefault();
+  currentLanguage = "mainPageHindi";
+  displayScreen(mainPageHindi);
 }
 
 function changeToUrdu() {
-  // Get the paragraph element by its ID
-  let paragraph = document.getElementById("introduction");
-  let myTitle = document.getElementById("title");
-  // Change the content of the paragraph
-  paragraph.innerHTML = "اردو میں مواد (Content in Urdu)";
-  myTitle.innerHTML = "اردو میں عنوان  (Title in Urdu)";
-  event.preventDefault();
+  currentLanguage = "mainPageUrdu";
+  displayScreen(mainPAgeUrdu);
 }
 
 function changeToFarsi() {
+  currentLanguage = "mainPAgeFarsi";
+  displayScreen(mainPageFarsi);
+}
+
+function displayScreen(currentLanguage) {
   // Get the paragraph element by its ID
   let paragraph = document.getElementById("introduction");
   let myTitle = document.getElementById("title");
+  let myHeader = document.getElementById("mainHeader");
+  let myFooter = document.getElementById("mainFooter");
   // Change the content of the paragraph
-  paragraph.innerHTML = "مطالب به زبان فارسی   Content in Farsi";
-  myTitle.innerHTML = "عنوان به فارسی  Title in Farsi";
+  paragraph.innerHTML = currentLanguage.content;
+  myTitle.innerHTML = currentLanguage.title;
+  myHeader.innerHTML = currentLanguage.header;
+  myFooter.innerHTML = currentLanguage.footer;
   event.preventDefault();
 }
+
+// Object that contains the elements of the main page in Spanish
+const mainPageSpanish = {
+  content: "Contenido en Español (Content in Spanish)",
+  title: "Titulo en Español (Title in Spanish)",
+  header: "Encabezado en Español Header in Spanish",
+  footer: "Footer in Spanish",
+};
+
+// Object that contains the elements of the main page in English
+const mainPageEnglish = {
+  content: "Content in English",
+  title: "Title in English",
+  header: "Header in English",
+  footer: "Footer in English",
+};
+
+// Object that contains the elements of the main page in Dari
+const mainPageDari = {
+  content: "محتوا در دری  (Content in Dari)",
+  title: " (عنوان دری Title to Dari)",
+  header: "Header in Dari",
+  footer: "Footer in Dari",
+};
+
+// Object that contains the elements of the main page in Pashto
+const mainPagePashto = {
+  content: "مواد په پښتو ژبه (Content in Pashto)",
+  title: "سرلیک په پښتو ژبه (Title in Pashto)",
+  header: "Header in Pashto",
+  footer: "Footer in Pashto",
+};
+
+// Object that contains the elements of the main page in Hindi
+const mainPageHindi = {
+  content: "हिंदी में सामग्री (Content in Hindi)",
+  title: "हिंदी में शीर्षक (Title in Hindi)",
+  header: "Header in Hindi",
+  footer: "Footer in Hindi",
+};
+
+// Object that contains the elements of the main page in Urdu
+const mainPAgeUrdu = {
+  content: "اردو میں مواد (Content in Urdu)",
+  title: "اردو میں عنوان  (Title in Urdu)",
+  header: "Header in Urdu",
+  footer: "Footer in Urdu",
+};
+
+// Object that contains the elements of the main page in Farsi
+const mainPageFarsi = {
+  content: "مطالب به زبان فارسی   (Content in Farsi)",
+  title: "عنوان به فارسی  (Title in Farsi)",
+  header: "Header in Farsi",
+  footer: "Footer in Farsi",
+};
