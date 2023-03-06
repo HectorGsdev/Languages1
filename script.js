@@ -1,6 +1,6 @@
 "use strict";
 
-let currentLanguage = "English";
+let currentLanguage = "";
 
 function changeToSpanish() {
   currentLanguage = "mainPageSpanish";
@@ -48,7 +48,7 @@ function displayScreen(currentLanguage) {
   myTitle.innerHTML = currentLanguage.title;
   myHeader.innerHTML = currentLanguage.header;
   myFooter.innerHTML = currentLanguage.footer;
-  event.preventDefault();
+  // event.preventDefault();
 }
 
 // Object that contains the elements of the main page in Spanish
@@ -106,3 +106,13 @@ const mainPageFarsi = {
   header: "Header in Farsi",
   footer: "Footer in Farsi",
 };
+
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
