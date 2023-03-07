@@ -5,112 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-
-
-
   </head>
   <body>
-
-
-
-
     <header>
-
       <div class="mainHeader" id="mainHeader">
-        <h3>Here is the information for the header</h3>
-      </div>   
+        <h3 class="header">Here is the information for the header</h3>
+      </div>
+    </header>
 
-      <br><br><br>
+    <br /><br /><br />
 
-      <!-- Add nav bar Here -->
-      <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <div class="dropdown">
-          <button class="dropbtn">Select your language:
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <!-- <a href="#" class = "button">Link 1</a>
-            <a href="#" class ="button">Link 2</a>
-            <a href="#" class  ="button">Link 3</a> -->
-
-          <a>  <button class="icon, button" onclick="changeToEnglish()">English</button></a>
-          <a>  <button class="icon, button" onclick="changeToDari()">دری  (Dari)</button></a>
-          <a>  <button class="icon, button" onclick="changeToFarsi()">فارسی  (Farsi)</button></a>
-          <a>  <button class="icon, button" onclick="changeToPashto()">(پښتو Pashto)</button> </a>
-    
-
-
+    <!-- Add nav bar Here -->
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Select your language:
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <div>
+            <button class="icon, button" onclick="changeToEnglish()">
+              English
+            </button>
+          </div>
+          <div>
+            <button class="icon, button" onclick="changeToDari()">
+              دری (Dari)
+            </button>
+          </div>
+          <div>
+            <button class="icon, button" onclick="changeToFarsi()">
+              فارسی (Farsi)
+            </button>
+          </div>
+          <div>
+            <button class="icon, button" onclick="changeToPashto()">
+              (پښتو Pashto)
+            </button>
           </div>
         </div>
-        <a href="#about">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
       </div>
-      
-      
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+        >&#9776;</a
+      >
+    </div>
 
-
-
-    
-         <br><br><br> 
-     <!-- <div class="displayDiv">
-       <h1 class ="select">Select your language:</h1>    
-     </div> -->
-
-<!-- 
-    <div class="mainDiv">
-
-   
-      <form>
-        <button class="button" onclick="changeToEnglish()">English</button>
-        <button class="button" onclick="changeToDari()">دری  (Dari)</button>
-        <button class="button" onclick="changeToFarsi()">فارسی  (Farsi)</button>
-        <button class="button" onclick="changeToHindi()">हिंदी (Hindi)</button>
-        <button class="button" onclick="changeToPashto()">(پښتو Pashto)</button>
-        <button class="button" onclick="changeToSpanish()" id ="spanish">Español (Spanish)</button>
-        <button class="button" onclick="changeToUrdu()" >(اردو Urdu)</button>             
-      </form>
-    </div> --> 
-    <br />
-    <!-- <hr /> -->
-    <!-- Display text here -->
-   
+    <br /><br /><br /><br />
     <br />
     <div>
-      <h1 id ="title">Title in English </h1>
-      <br><br>
-     
+      <h1 id="title">Title in English</h1>
+      <br /><br />
 
-       <p class="intoduction" id="introduction">
-         This is the area to write the introduction. This is who we are, what we
+      <p class="intoduction" id="introduction">
+        This is the area to write the introduction. This is who we are, what we
         do, etc. Lorem sollicitudin sapien iaculis aliquet. Morbi ornare ornare
         enim non rutrum. Curabitur id arcu tortor. Integer bibendum nec enim
         eget vestibulum. Nunc risus leo, fringilla vitae magna non, commodo
-        cursus dolor. Donec bibendum urna non lorem mollis, ac vulputate mi
-        vestibulum. Pellentesque faucibus luctus efficitur. Proin a quam libero.
-        Nunc vel sollicitudin mauris. Donec iaculis urna mi, quis dignissim nibh
-        laoreet sed. Ut quis semper risus. Pellentesque metus nisl, commodo non
-        laoreet ac, tincidunt in eros. Integer malesuada felis eget lacus
-        condimentum ultrices. Nullam maximus est in arcu ultricies porta.
-        Quisque commodo velit a dignissim maximus. Sed libero dui, sodales
-        dignissim dignissim nec, convallis in magna. Quisque dapibus dolor ut
-        est gravida aliquam.     Curabitur id arcu tortor. Integer bibendum nec enim
-        eget vestibulum. Nunc risus leo, fringilla vitae magna non, commodo
-        cursus dolor. Donec bibendum urna non lorem mollis, ac vulputate mi
-        vestibulum. Pellentesque faucibus luctus efficitur. Proin a quam libero.
-        Nunc vel sollicitudin mauris. Donec iaculis urna mi, quis dignissim nibh
-        laoreet sed. Ut quis semper risus. Pellentesque metus nisl, commodo non
-        laoreet ac, tincidunt in eros. Integer malesuada felis eget lacus
-        condimentum ultrices. Nullam maximus est in arcu ultricies porta.
-        Quisque commodo velit a dignissim maximus. Sed libero dui, sodales
-        dignissim dignissim nec, convallis in magna. Quisque dapibus dolor ut
-        est gravida aliquam.
-      </p>
+        cursus dolor.
       </p>
     </div>
-    <br><br><br><br><br><br>
+    <br /><br /><br /><br /><br /><br />
     <footer>
       <div class="mainFooter" id="mainFooter">
         <h3>Here is the information for the footer</h3>
